@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/control"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:onClick="control"
+            android:text="控制ViewPage" />
+
+        <TextView
+            android:id="@+id/net_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:onClick="load"
+            android:text="wangluo" />
+
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.bottombar.yul.bottombar.view.NoScrollViewPager
+        android:id="@+id/view_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:overScrollMode="never" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#33666666" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center"
+        android:clipChildren="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/item_btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="闲鱼"
+            android:textColor="@drawable/home_color" />
+
+        <RadioButton
+            android:id="@+id/item_btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="鱼塘"
+            android:textColor="@drawable/home_color" />
+
+        <RadioButton
+            android:id="@+id/item_btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:button="@null"
+            android:onClick="centerClick"
+            android:drawableTop="@mipmap/comui_tab_post"
+            android:gravity="center"
+            android:textColor="@drawable/home_color" />
+
+        <RadioButton
+            android:id="@+id/item_btn_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="消息"
+            android:textColor="@drawable/home_color" />
+
+        <RadioButton
+            android:id="@+id/item_btn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="我的"
+            android:textColor="@drawable/home_color" />
+
+    </RadioGroup>
+
+
+</LinearLayout>
